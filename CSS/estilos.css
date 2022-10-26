@@ -1,4 +1,4 @@
-body {background-image: url(../Imagenes/imagen_fondo.jpg); background-attachment:fixed; background-size:contain;}
+body {background-color: darksalmon; background-image: url(../Imagenes/imagen_fondo.jpg); background-attachment:fixed; background-size:contain;}
 
 h1 {font-family:Monotype Corsiva; 
     font-size: 90px; 
@@ -9,6 +9,14 @@ h1 {font-family:Monotype Corsiva;
     text-decoration-line: underline;
     text-decoration-color: rgb(238, 231, 231);
     background-image: url(../Imagenes/imagen_fondo_titulo.jpg);}
+
+nav {color:maroon; 
+    background-color: azure; 
+    font-size:x-large; 
+    font-weight:bolder; 
+    font-style: italic; 
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: center;}
 
 .subt {color:maroon; 
     background-color: azure; 
@@ -42,3 +50,7 @@ h1 {font-family:Monotype Corsiva;
 .enlace {font-size: large; 
     font-family: Arial, Helvetica, sans-serif; 
     font-style: italic;}
+
+#wpp {position: fixed; 
+    bottom: 25px; 
+    right: 25px;}
