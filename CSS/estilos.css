@@ -5,7 +5,8 @@ header {
     height: 190px;
     display:flex;
     justify-content: space-between;
-    justify-content: space-around;}
+    justify-content: space-around;
+    flex-wrap: wrap;}
 
 #logo {
     height: 180px;}
@@ -37,7 +38,7 @@ nav {color:maroon;
     display: flex;
     justify-content: space-around;
     flex-grow: 1;
-}
+    flex-wrap: wrap;}
 
 .subt {color:maroon; 
     background-color: azure; 
@@ -57,7 +58,8 @@ nav {color:maroon;
 #main {
     display: flex;
     height: 800px;
-    overflow: auto;}
+    overflow: auto;
+    flex-wrap: wrap;}
 
 aside {
     width: 350px;
@@ -85,7 +87,7 @@ aside {
     font-weight: 500; 
     font-style:oblique; 
     text-align: left; 
-    text-decoration:underline; }
+    text-decoration:underline;}
 
 .listas {font-size:large; 
     font-weight: 300; 
@@ -107,7 +109,8 @@ footer {
     justify-content: space-between;
     justify-content: space-around;
     align-items: center;
-    flex-grow: 3;}
+    flex-grow: 3;
+    flex-wrap: wrap;}
 
 #datos {
     font-size:large; 
