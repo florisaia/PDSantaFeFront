@@ -1,14 +1,29 @@
 body {background-color: darksalmon; background-image: url(../Imagenes/imagen_fondo.jpg); background-attachment:fixed; background-size:contain;}
 
-h1 {font-family:Monotype Corsiva; 
-    font-size: 90px; 
+header {
+    background-image: url(../Imagenes/imagen_fondo_titulo.jpg);
+    height: 190px;
+    display:flex;
+    justify-content: space-between;
+    justify-content: space-around;}
+
+#logo {
+    height: 180px;}
+
+h1 {font-family: Monotype Corsiva; 
+    font-size: 70px; 
     font: weight 500; 
     font-style:italic; 
     color: aliceblue;
     text-decoration:solid;
     text-decoration-line: underline;
-    text-decoration-color: rgb(238, 231, 231);
-    background-image: url(../Imagenes/imagen_fondo_titulo.jpg);}
+    text-decoration-color: rgb(238, 231, 231);}
+
+.enlaces {
+    background-color:inherit;
+    size: 30px;
+    margin-top: 68px;
+    margin-bottom: 80px;}
 
 nav {color:maroon; 
     background-color: azure; 
@@ -18,6 +33,12 @@ nav {color:maroon;
     font-family: 'Times New Roman', Times, serif; 
     text-align: center;}
 
+#recetas {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
 .subt {color:maroon; 
     background-color: azure; 
     font-size:xx-large; 
@@ -26,7 +47,32 @@ nav {color:maroon;
     font-family: 'Times New Roman', Times, serif; 
     text-align: center;}
 
-.text {font-size:medium; 
+.intro {
+    font-size:large; 
+    font-weight: 200; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-style: normal; 
+    text-align:center;}
+
+#main {
+    display: flex;
+    height: 800px;
+    overflow: auto;}
+
+aside {
+    width: 350px;
+    background-color: azure;
+    justify-content: space-around;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: brown;
+    font-size:large; 
+    font-weight: 200; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-style: normal; 
+    text-align:center;}
+
+.text {font-size:large; 
     font-weight: 700; 
     font-family: Arial, Helvetica, sans-serif; 
     font-style: normal; 
@@ -38,18 +84,37 @@ nav {color:maroon;
     font-family:Monotype Corsiva; 
     font-weight: 500; 
     font-style:oblique; 
-    text-align: right; 
+    text-align: left; 
     text-decoration:underline; }
 
-.listas {font-size:medium; 
-    font-weight: 500; 
+.listas {font-size:large; 
+    font-weight: 300; 
     font-family: Arial, Helvetica, sans-serif; 
     font-style: normal; 
-    text-align:left;}
+    text-align:left;
+    justify-content: flex-start;
+    flex-grow: 3;
+    overflow: auto;}
 
 .enlace {font-size: large; 
     font-family: Arial, Helvetica, sans-serif; 
     font-style: italic;}
+
+footer {
+    background-color: inherit;
+    height: 190px;
+    display:flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 3;}
+
+#datos {
+    font-size:large; 
+    font-weight: 300; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-style: normal; 
+    text-align:left;}
 
 #wpp {position: fixed; 
     bottom: 25px; 
