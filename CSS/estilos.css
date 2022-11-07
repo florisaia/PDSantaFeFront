@@ -2,18 +2,20 @@ body {background-color: darksalmon; background-image: url(../Imagenes/imagen_fon
 
 header {
     background-image: url(../Imagenes/imagen_fondo_titulo.jpg);
-    height: 190px;
+    height: 3%;
     display:flex;
     justify-content: space-between;
     justify-content: space-around;
     flex-wrap: wrap;}
 
 #logo {
-    height: 180px;}
+    height: 170px;}
 
-h1 {font-family: Monotype Corsiva; 
-    font-size: 70px; 
-    font: weight 500; 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+h1 {font-family: 'Cinzel', serif; 
+    font-size: 350%; 
+    font: weight 50; 
     font-style:italic; 
     color: aliceblue;
     text-decoration:solid;
@@ -22,16 +24,15 @@ h1 {font-family: Monotype Corsiva;
 
 .enlaces {
     background-color:inherit;
-    size: 30px;
-    margin-top: 68px;
-    margin-bottom: 80px;}
+    size: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;}
 
 nav {color:maroon; 
     background-color: azure; 
     font-size:x-large; 
-    font-weight:bolder; 
-    font-style: italic; 
-    font-family: 'Times New Roman', Times, serif; 
+    font-weight:lighter;  
+    font-family: 'Cinzel', serif; 
     text-align: center;}
 
 #recetas {
@@ -39,6 +40,21 @@ nav {color:maroon;
     justify-content: space-around;
     flex-grow: 1;
     flex-wrap: wrap;}
+
+a:hover {
+    color: blueviolet;
+    font-size:xx-large;
+}
+
+#fotos {
+    height: 25%;
+    display: flex;
+    justify-content:space-around;
+    box-sizing: content-box;
+}
+
+#img1 { width: 49%;}
+#img2 { width: 49%;}
 
 .subt {color:maroon; 
     background-color: azure; 
@@ -57,22 +73,27 @@ nav {color:maroon;
 
 #main {
     display: flex;
-    height: 800px;
+    height: 20%;
     overflow: auto;
     flex-wrap: wrap;}
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
+
 aside {
-    width: 350px;
+    width: 23%;
     background-color: azure;
     justify-content: space-around;
-    margin-left: 10px;
+    justify-content: flex-end;
+    margin-left: 0.5%;
     border-style: solid;
     border-color: brown;
     font-size:large; 
     font-weight: 200; 
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: 'Cormorant', serif; 
     font-style: normal; 
-    text-align:center;}
+    text-align:center;
+    padding: auto;
+}
 
 .text {font-size:large; 
     font-weight: 700; 
@@ -82,8 +103,8 @@ aside {
 
 .subtitulo {color:rgb(248, 244, 242); 
     background-image: url(../Imagenes/imagen_fondo_titulo.jpg) ; 
-    font-size: 40px; 
-    font-family:Monotype Corsiva; 
+    font-size: 200%; 
+    font-family: 'Cinzel', serif; 
     font-weight: 500; 
     font-style:oblique; 
     text-align: left; 
@@ -95,16 +116,16 @@ aside {
     font-style: normal; 
     text-align:left;
     justify-content: flex-start;
-    flex-grow: 3;
+    width: 75%;
     overflow: auto;}
 
-.enlace {font-size: large; 
-    font-family: Arial, Helvetica, sans-serif; 
-    font-style: italic;}
+.enlace {font-size: x-large; 
+    font-family: 'Cinzel', serif; 
+}
 
 footer {
     background-color: inherit;
-    height: 190px;
+    height: 3%;
     display:flex;
     justify-content: space-between;
     justify-content: space-around;
@@ -120,5 +141,5 @@ footer {
     text-align:left;}
 
 #wpp {position: fixed; 
-    bottom: 25px; 
-    right: 25px;}
+    bottom: 3%; 
+    right: 1%;}
