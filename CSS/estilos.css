@@ -3,20 +3,21 @@ body {background-color: darksalmon; background-image: url(../Imagenes/imagen_fon
 header {
     background-image: url(../Imagenes/imagen_fondo_titulo.jpg);
     height: 3%;
-    display:flex;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    justify-content: space-around;
-    flex-wrap: wrap;}
+    justify-content: space-around;}
 
 #logo {
-    height: 170px;}
+    height: 140px;}
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 h1 {font-family: 'Cinzel', serif; 
-    font-size: 350%; 
-    font: weight 50; 
-    font-style:italic; 
+    font-size: 300%;  
+    font-style:italic;
+    margin-top: 5%;
+    margin-bottom: 5%;
     color: aliceblue;
     text-decoration:solid;
     text-decoration-line: underline;
@@ -33,7 +34,9 @@ nav {color:maroon;
     font-size:x-large; 
     font-weight:lighter;  
     font-family: 'Cinzel', serif; 
-    text-align: center;}
+    text-align: center;
+    text-decoration: none;
+}
 
 #recetas {
     display: flex;
@@ -85,6 +88,7 @@ aside {
     justify-content: space-around;
     justify-content: flex-end;
     margin-left: 0.5%;
+    margin-right: 0.5%;
     border-style: solid;
     border-color: brown;
     font-size:large; 
@@ -93,6 +97,10 @@ aside {
     font-style: normal; 
     text-align:center;
     padding: auto;
+}
+
+#paris {justify-content: stretch;
+    align-items: stretch;
 }
 
 .text {font-size:large; 
@@ -121,12 +129,13 @@ aside {
 
 .enlace {font-size: x-large; 
     font-family: 'Cinzel', serif; 
+    text-decoration: none;
 }
 
 footer {
     background-color: inherit;
     height: 3%;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     justify-content: space-around;
     align-items: center;
@@ -143,3 +152,43 @@ footer {
 #wpp {position: fixed; 
     bottom: 3%; 
     right: 1%;}
+
+    @media (max-width:1653px){
+        .chiste {display: none;}
+    }
+    @media(max-width:1070px){
+        header {flex-direction: column;}
+        #main{display:block;}
+        aside {width: 96vw;}
+        .listas {width: 96.5vw;}
+        .chiste {display: none;}
+    }
+    @media (max-width:1025px){
+        footer {flex-direction: column;}
+        #datos {text-align: center;}
+        .chiste {display: none;}
+    }
+    @media (max-width:574px){
+        body {background-image: url(../Imagenes/imagen_fondo_titulo.jpg);
+            width:fit-content;}
+        header {background-image: url(../Imagenes/imagen_fondo.jpg);}
+        #logo {display: none;}
+        h1 {color: black; text-decoration: black;}
+        #recetas {flex-direction: column;
+            text-align: left;}
+        .intro {color: beige;}
+        #main {width:inherit;}
+        .subtitulo {background-image: url(../Imagenes/imagen_fondo.jpg); 
+            color: black;}
+        .listas {color:aliceblue}
+        .text {color: aliceblue;}
+        .enlace {display: none;}
+        .chiste {display:block;
+            color:maroon; 
+            background-color: azure; 
+            font-size:xx-large; 
+            font-weight:bolder; 
+            font-style: italic; 
+            font-family: 'Times New Roman', Times, serif; 
+            text-align: center;}
+    }
