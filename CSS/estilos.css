@@ -132,6 +132,24 @@ aside {
     text-decoration: none;
 }
 
+.card  {
+    background-image: url(../Imagenes/imagen_fondo_titulo.jpg);
+    color:aliceblue;
+    margin: 0.5rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+.card-title {
+    background-color: beige;
+    color:rgb(12, 12, 12);  
+    font-size: 170%; 
+    font-family: 'Cinzel', serif; 
+    font-weight: 500; 
+    font-style:oblique; 
+    text-align: left; 
+}
+
 footer {
     background-color: inherit;
     height: 3%;
@@ -191,4 +209,9 @@ footer {
             font-style: italic; 
             font-family: 'Times New Roman', Times, serif; 
             text-align: center;}
-    }
+        .card  {
+            background-image: url(../Imagenes/imagen_fondo.jpg);
+            color: black;}
+        .card-title { background-image: url(../Imagenes/imagen_fondo_titulo.jpg);
+            color:aliceblue;}
+        }
