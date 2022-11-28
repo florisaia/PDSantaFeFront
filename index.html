@@ -11,9 +11,12 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/estilos.css">
+    <script> alert ("¡Bienvenido/a!                                                                                     Espero que disfrutes de esta magnífica receta, adelante...")</script>
 </head>
 
 <body>
+    <button id="boton" onclick = "nocturno()">Modo nocturno</button>
+
     <header>
         <img src="./Imagenes/logo.png" alt="Logo" id="logo">
         <center><h1>MARQUISE DE CHOCOLATE</h1></center>
@@ -27,24 +30,25 @@
     </header>
 
     <center><audio id="audio" controls autoplay loop src="./Audio/audio_frances.mp3" id="rep"></audio></center>
+
     <br>
 
-    <nav>
+    <nav Id="nav">
         <div id="recetas">
             <a href="index.html">INICIO</a>
             <a href="contactos.html">CONTACTO</a>
-            <a href="recetas">MAS RECETAS</a>
+            <a href="https://cocinafrancia.com/" target="_blank">MAS RECETAS</a>
         </div>
     </nav>
     
-    <section>
+    <section id = "portada">
         <br>
         <div id="fotos">
             <img id= "img1" src= ./Imagenes/marquise1.jpg  alt="Marquise de chocolate.">
             <img id = "img2" src="./Imagenes/marquise2.jpg"  alt="Marquise de chocolate.">
         </div>
         <h3 class="subt">Es un clásico de la pastelería internacional y un distinguido postre de la cocina francesa. </h3>
-        <div class="intro">
+        <div id = "intro">
             <center><p>"La marquise au chocolat" es, definitivamente, ¡un postre exquisito al que nadie se puede resistir! Así que, ¿por qué no hacerla en casa?</p></center>
             <center><b> Acá te dejamos la receta original de la marquise de chocolate, con el paso a paso de cómo hacerla.</b></center>
             <br>
@@ -52,7 +56,7 @@
     </section>
     
     <section id="main">
-        <aside>
+        <aside id ="aside">
             <p>Es un postre cremoso, frío hecho a base de chocolate, manteca, azúcar y huevos. Suele servirse con algún fruto ácido o con chocolate; y algunas salsas como dulce de leche.
                 <br>
                 <center><iframe id="paris" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d335958.1500608494!2d2.1276779571623785!3d48.86367955632612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e613c4b02a1e15%3A0x72eabdcb3ad2bd9b!2zU8OpdmlnbsOp!5e0!3m2!1ses!2sar!4v1665780588231!5m2!1ses!2sar" width="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
@@ -65,7 +69,7 @@
             </p>
         </aside>
 
-        <div class="listas">
+        <div id="listas">
             <h2 class="subtitulo">Ingredientes  </h2>
             <ul>
                 <li>250 gr. de chocolate semiamargo.</li>
@@ -93,8 +97,6 @@
                 <li>Armar: cubrir la torta con dulce de leche y la crema Chantilly. Decorar con chocolate rallado o frutos rojos.</li>
             </ol>
         </div>
-
-        
     </section>
 
     <section id="video">
@@ -161,8 +163,7 @@
     </div>
 
     <br>
-    <footer>
-        <iframe id= "rafaela" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6821.928287324838!2d-61.49656158199565!3d-31.24941591862824!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1666917908942!5m2!1ses!2sar" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+    <footer id = "footer">
         <div class="enlaces">
             <a href="https://www.facebook.com/" target="_blank"><img src="./Imagenes/facebook.png" height= 40px alt="Facebook"></a>
             <a href="https://twitter.com/home" target="_blank"><img src="./Imagenes/twitter.png" height= 40px alt="Twitter"></a>
@@ -170,24 +171,15 @@
             <a href="https://telegram.org/" target="_blank"><img src="./Imagenes/telegram.png" height= 40px alt="Telegram"></a>
             <a href="https://www.youtube.com/" target="_blank"><img src="./Imagenes/youtube.png" height= 40px alt="Youtube"></a>
         </div>
-        <div id="datos">
-            Florencia Isaia
-            <br>
-            <br>
-            FED - Potrero Digital
-            <br>
-            <br>
-            Rafaela, Santa Fe, Argentina
-            <br>
-            <br>
-            <a href="https://www.linkedin.com/in/florencia-isaia-9a55151b6/?locale=en_US">LinkedIn</a>
-        </div>
+        <button onclick="copyright()">© Copyright</button>
     </footer>
 
     <a href="https://wa.me/5493492685403" target="_blank"><img src="./Imagenes/whatsapp.png" height= 50px alt="WhatsApp" id="wpp"></a>
     
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script src="./JS/script.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,14 @@
 body {background-color: darksalmon; background-image: url(../Imagenes/imagen_fondo.jpg); background-attachment:fixed; background-size:contain;}
 
+#boton {position: fixed; 
+    bottom: 96%; 
+    right: 0.5%;
+    background-image: none;
+    background-color: beige;
+    border-bottom: blueviolet;
+    border-radius: 10px ;
+}
+
 header {
     background-image: url(../Imagenes/imagen_fondo_titulo.jpg);
     height: 3%;
@@ -67,7 +76,7 @@ a:hover {
     font-family: 'Times New Roman', Times, serif; 
     text-align: center;}
 
-.intro {
+#intro {
     font-size:large; 
     font-weight: 200; 
     font-family: Arial, Helvetica, sans-serif; 
@@ -118,7 +127,7 @@ aside {
     text-align: left; 
     text-decoration:underline;}
 
-.listas {font-size:large; 
+#listas {font-size:large; 
     font-weight: 300; 
     font-family: Arial, Helvetica, sans-serif; 
     font-style: normal; 
@@ -150,22 +159,20 @@ aside {
     text-align: left; 
 }
 
+button {background-image: url(../Imagenes/imagen_fondo.jpg);
+    border-style: none;
+    border-radius: 10px;
+    box-sizing: content-box;
+}
 footer {
-    background-color: inherit;
-    height: 3%;
+    background-color: inherit; 
+    box-sizing: border-box;   
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
     align-items: center;
     flex-grow: 3;
     flex-wrap: wrap;}
-
-#datos {
-    font-size:large; 
-    font-weight: 300; 
-    font-family: Arial, Helvetica, sans-serif; 
-    font-style: normal; 
-    text-align:left;}
 
 #wpp {position: fixed; 
     bottom: 3%; 
