@@ -201,11 +201,11 @@ footer {
         h1 {color: black; text-decoration: black;}
         #recetas {flex-direction: column;
             text-align: left;}
-        .intro {color: beige;}
+        #intro {color: rgb(248, 248, 239);}
         #main {width:inherit;}
         .subtitulo {background-image: url(../Imagenes/imagen_fondo.jpg); 
             color: black;}
-        .listas {color:aliceblue}
+        #listas {color:rgb(247, 250, 252)}
         .text {color: aliceblue;}
         .enlace {display: none;}
         .chiste {display:block;
